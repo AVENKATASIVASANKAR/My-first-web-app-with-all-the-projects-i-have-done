@@ -56,6 +56,30 @@
             width:19vw;
             height:34vh;
         }
+        @media only screen and (max-width: 400px) {
+    body{
+            text-align: center;
+            justify-content: center;
+            justify-items: center;
+            align-items: center;
+            display: flex;
+            margin:5%;
+        }
+        .card{
+            width:60%;
+            border-color:blue;
+           margin-left: 22%;
+           margin-bottom: 7%;
+           height: 68vh;
+        }
+        .card-header img{
+            width:50vw;
+            height:34vh;
+        }
+        #back-img{
+            font-size:3vh;
+        }
+}
     </style>
 </head>
 <body>
@@ -111,7 +135,7 @@
 <img src="images/bg-width change logo.jpg">
         </div>
         <div class="card-body">
-            <h2>BackGround images background size change every second along with the Font size change every second</h2>
+            <h2 id="back-img">BackGround images background size change every second along with the Font size change every second</h2>
         </div>
     </div>
 </div>
