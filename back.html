@@ -173,6 +173,20 @@
     </div>
 </div>
 
+           
+           
+           <div class="col">
+    <div id="mouse-events" class="card">
+        <div class="card-header">
+            <img src="images/mouse-event.png">
+        </div>
+        <div class="card-body">
+            <h2>Number change on mouse enter,over and move</h2>
+        </div>
+    </div>
+</div>
+           
+           
 
 <div class="col">
     <div id="Find-large-string" class="card">
@@ -186,6 +200,7 @@
    </div>     
     </div>
     <script>
+           
         var Timer=document.getElementById('Timer');
         var Dice=document.getElementById('Dice');
         var Bmi2=document.getElementById('Bmi2');
@@ -194,6 +209,7 @@
         var Calc2=document.getElementById('Calc2');
         var Calc1=document.getElementById('Calc1');
         var Findlargestring=document.getElementById('Find-large-string');
+           var MouseEvent=document.getElementById('mouse-events');
         var Fontsizechange=document.getElementById('Font-size-change');
         Timer.addEventListener('click',function(){
             window.open('https://avenkatasivasankar.github.io/TimerToOpenA-Page/')
@@ -218,6 +234,9 @@
         });
         Fontsizechange.addEventListener('click',function(){
             window.open('https://avenkatasivasankar.github.io/Increase-Decrease-Font-size-Onclick/')
+        });
+             MouseEvent.addEventListener('click',function(){
+            window.open('mouse.html')
         });
         Findlargestring.addEventListener('click',function(){
             window.open('https://avenkatasivasankar.github.io/find-Largest-Word-in-a-string/')
