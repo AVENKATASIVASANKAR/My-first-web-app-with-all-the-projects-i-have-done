@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<style>
+    body{
+        text-align: center;
+    }
+    p{
+        font-size:70px;
+    }
+</style>
+</head>
+<body>
+<button id="top-btn"type="button">Click me</button>
+<main>
+    <div class="row">
+        <div class="col">
+    <div id="over">
+        <h3>mouse enter triggered:</h3>
+        <p>0</p>
+    </div>
+    </div>
+    <div class="col">
+    <div id="enter">
+        <h3>mouse enter triggered:</h3>
+        <p>0</p>
+    </div>
+    </div>
+    <div class="col">
+    <div id="move">
+        <h3>mouse enter triggered:</h3>
+        <p>0</p>
+    </div>
+    </div>
+    </div>
+</main>
+    <script>
+        var btn=document.getElementById('top-btn');
+btn.addEventListener('mousedown',function(){
+  console.log('mouse down event')
+});
+var btn=document.getElementById('top-btn');
+btn.addEventListener('mouseup',function(){
+  console.log('mouse up event')
+});
+var btn=document.getElementById('top-btn');
+btn.addEventListener('click',function(){
+  console.log('mouse clicked event')
+});
+var btn=document.getElementById('top-btn');
+btn.addEventListener('dblclick',function(){
+alert('double click')
+});
+var overcount=0;
+var over =document.getElementById('over');
+var btn=document.getElementById('top-btn');
+over.addEventListener('mouseover',function(){
+  var countElement=document.querySelector('#over > p');
+  overcount+=1;
+  countElement.innerHTML=overcount;
+
+});
+var entercount=0;
+var enter =document.getElementById('enter');
+var btn=document.getElementById('top-btn');
+enter.addEventListener('mouseover',function(){
+  var enterElement=document.querySelector('#enter > p');
+   entercount+=1;
+enterElement.innerHTML=entercount;
+});
+var movecount=0;
+var move =document.getElementById('move');
+var btn=document.getElementById('top-btn');
+move.addEventListener('mousemove',function(){
+var moveElement=document.querySelector('#move > p');
+movecount+=1;
+moveElement.innerHTML=movecount;
+});
+    </script>
+</body>
+</html>
